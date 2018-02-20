@@ -22,7 +22,7 @@
 				if(data=="ok"){
 					window.location = "inbox.php";
 				}else{
-					alert("ERROR!");
+					alert("ERROR!" + data);
 				}
 			    });
 		}
