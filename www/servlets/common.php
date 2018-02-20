@@ -23,7 +23,7 @@
 		
 	}
 
-if(1==1){
+if(1==2){
 	insertuser("m2", "abc123", "mini me");
 	$a1 = verifyPwd("m2", "abc123");
 	$a2 = verifyPwd("m2", "ccc123");

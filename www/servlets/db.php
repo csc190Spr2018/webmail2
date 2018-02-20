@@ -36,7 +36,7 @@
 
 
 //TEST CASES
-if(1==1){
+if(1==2){
 /*
 	executeSQL("INSERT INTO tbl_users(uname, pwd_hash, real_name) VALUES ('xfu', 'abc', 'evil')");
 	$arr = executeSQL("SELECT * FROM tbl_users");
