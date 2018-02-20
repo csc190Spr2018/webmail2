@@ -25,11 +25,23 @@
 	
 	}
 
+	function secure($txt){
+		//1. establish db connection
+		$link = mysql_connect('localhost', 'root', 'goodyear123!@#');
+		if (!$link) {
+		    throw new Exception("error: ".mysql_error());
+		}
+		return mysql_real_escape_string($txt, $link);
+	}
+
 
 //TEST CASES
 if(1==1){
+/*
 	executeSQL("INSERT INTO tbl_users(uname, pwd_hash, real_name) VALUES ('xfu', 'abc', 'evil')");
 	$arr = executeSQL("SELECT * FROM tbl_users");
 	print_r($arr);	
+*/
+	print(secure("abc'abc"));
 }
 ?>
